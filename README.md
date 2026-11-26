@@ -11,6 +11,7 @@
 | 史鉴（中国古代人物） | https://sherly2026.github.io/MBTI-Lab/history/ |
 | 寰鉴（外国历史人物） | https://sherly2026.github.io/MBTI-Lab/world/ |
 | 漫鉴（动漫人物） | https://sherly2026.github.io/MBTI-Lab/anime/ |
+| 九鉴（九型人格） | https://sherly2026.github.io/MBTI-Lab/enneagram/ |
 
 仓库设置：Settings → Pages → Source 选 **GitHub Actions**。
 
@@ -59,6 +60,14 @@
 | 角色池 | 16 型 × 每型 3 人 = 48 位动漫人物 |
 | 结果 | 详细性格对照、现代对应、功能栈、同型其他角色、视觉海报 |
 
+## 6. 九鉴（九型人格）
+
+| 项目 | 内容 |
+|------|------|
+| 题量 | 27 题（每型 3 题） |
+| 逻辑 | 九型主测 → 得分条 / 主型·翼型详析 / 可能的 MBTI → 确认 MBTI → 跨库匹配 |
+| 结果 | 灵塑动物、史鉴中国人物、寰鉴外国人物、漫鉴动漫角色 + 综合性格解析 |
+
 ## 本地运行
 
 ```bash
@@ -70,6 +79,7 @@ python -m http.server 5173
 - 史鉴：`http://localhost:5173/app/history/`
 - 寰鉴：`http://localhost:5173/app/world/`
 - 漫鉴：`http://localhost:5173/app/anime/`
+- 九鉴：`http://localhost:5173/app/enneagram/`
 
 ## 目录
 
@@ -80,6 +90,7 @@ app/
   history/                # 史鉴（中国）
   world/                  # 寰鉴（外国）
   anime/                  # 漫鉴（动漫）
+  enneagram/              # 九鉴（九型）
 .github/workflows/deploy-pages.yml
 ```
 

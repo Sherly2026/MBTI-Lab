@@ -52,6 +52,7 @@
       '<a class="btn ghost" href="./history/">史鉴</a>' +
       '<a class="btn ghost" href="./world/">寰鉴</a>' +
       '<a class="btn ghost" href="./anime/">漫鉴</a>' +
+      '<a class="btn ghost" href="./enneagram/">九鉴</a>' +
       "</div>" +
       '<button type="button" class="btn text" data-action="about">了解八维</button>' +
       '<ul class="meta-line"><li>' +

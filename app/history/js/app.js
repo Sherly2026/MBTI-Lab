@@ -56,6 +56,7 @@
       '<button type="button" class="btn primary" data-action="start">开始对照</button>' +
       '<a class="btn ghost" href="../anime/">漫鉴</a>' +
       '<a class="btn ghost" href="../world/">寰鉴</a>' +
+      '<a class="btn ghost" href="../enneagram/">九鉴</a>' +
       "</div>" +
       '<ul class="meta-line"><li>' +
       TOTAL +
