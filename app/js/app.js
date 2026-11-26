@@ -48,8 +48,9 @@
       '<p class="lede">用荣格八维看清你的认知偏好：题量适中，情境清晰，结果给出类型与功能栈。</p>' +
       '<div class="cta-row">' +
       '<button type="button" class="btn primary" data-action="start">开始测试</button>' +
-      '<button type="button" class="btn ghost" data-action="about">了解八维</button>' +
+      '<a class="btn ghost" href="./animal/">动物塑「灵塑」</a>' +
       "</div>" +
+      '<button type="button" class="btn text" data-action="about">了解八维</button>' +
       '<ul class="meta-line"><li>' +
       TOTAL +
       " 题</li><li>约 6–8 分钟</li><li>八维计分</li></ul>" +
