@@ -50,6 +50,7 @@
       '<button type="button" class="btn primary" data-action="start">开始测试</button>' +
       '<a class="btn ghost" href="./animal/">灵塑</a>' +
       '<a class="btn ghost" href="./history/">史鉴</a>' +
+      '<a class="btn ghost" href="./world/">寰鉴</a>' +
       "</div>" +
       '<button type="button" class="btn text" data-action="about">了解八维</button>' +
       '<ul class="meta-line"><li>' +

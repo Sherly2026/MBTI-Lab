@@ -8,7 +8,8 @@
 |------|------|
 | 八维测 | https://sherly2026.github.io/MBTI-Lab/ |
 | 灵塑（动物塑） | https://sherly2026.github.io/MBTI-Lab/animal/ |
-| 史鉴（古代人物） | https://sherly2026.github.io/MBTI-Lab/history/ |
+| 史鉴（中国古代人物） | https://sherly2026.github.io/MBTI-Lab/history/ |
+| 寰鉴（外国历史人物） | https://sherly2026.github.io/MBTI-Lab/world/ |
 
 仓库设置：Settings → Pages → Source 选 **GitHub Actions**。
 
@@ -39,6 +40,15 @@
 
 人物结果为类型学**隐喻对照**，不构成对历史人物的心理或史实鉴定。
 
+## 4. 寰鉴（外国历史人物对照）
+
+| 项目 | 内容 |
+|------|------|
+| 题量 | 33 题（八维 24 + 九型 9） |
+| 逻辑 | 与史鉴相同：八维定 MBTI，九型分流人物 |
+| 人物池 | 16 型 × 每型 3 人 = 48 位外国历史人物 |
+| 结果 | 详细性格对照、现代对应、功能栈、同型其他人选、视觉形象 |
+
 ## 本地运行
 
 ```bash
@@ -48,6 +58,7 @@ python -m http.server 5173
 - 八维测：`http://localhost:5173/app/`
 - 灵塑：`http://localhost:5173/app/animal/`
 - 史鉴：`http://localhost:5173/app/history/`
+- 寰鉴：`http://localhost:5173/app/world/`
 
 ## 目录
 
@@ -55,7 +66,8 @@ python -m http.server 5173
 app/
   index.html              # 八维测
   animal/                 # 灵塑
-  history/                # 史鉴
+  history/                # 史鉴（中国）
+  world/                  # 寰鉴（外国）
 .github/workflows/deploy-pages.yml
 ```
 

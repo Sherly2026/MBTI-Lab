@@ -45,7 +45,7 @@
       '<div class="cta-row">' +
       '<button type="button" class="btn primary" data-action="start">开始塑形</button>' +
       '<a class="btn ghost" href="../history/">史鉴</a>' +
-      '<a class="btn ghost" href="../index.html">八维测</a>' +
+      '<a class="btn ghost" href="../world/">寰鉴</a>' +
       "</div>" +
       '<ul class="meta-line"><li>' +
       TOTAL +
