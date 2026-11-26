@@ -60,12 +60,12 @@
       "</div>" +
       '<ul class="meta-line"><li>' +
       TOTAL +
-      " 题</li><li>约 7–9 分钟</li><li>每型 ≥3 人</li><li>八维 + 九型</li></ul>" +
+      " 题</li><li>约 7–9 分钟</li><li>每型 6 人</li><li>八维 + 九型</li></ul>" +
       "</header>" +
       '<aside class="about-panel">' +
       "<h2>如何得出人物</h2>" +
-      "<p>先由八维匹配 MBTI，再由九型题得到主型与翼型；在该 MBTI 的人物池中，按功能权重与九型契合度选出主结果，并展示同型其他人物。</p>" +
-      "<p class=\"note\">角色塑形是教学隐喻，不是对作品角色的官方设定鉴定。</p>" +
+      "<p>先由八维匹配 MBTI，再由九型题得到主型与翼型；在该 MBTI 的 6 人池中按功能权重与九型契合度排序，给出最匹配角色及完整排行。</p>" +
+      "<p class=\"note\">角色塑形参考社群常见对照（如 L、奇犽多归 INTP），是教学隐喻，不是官方设定鉴定。</p>" +
       "</aside></section>"
     );
   }
@@ -138,20 +138,30 @@
         );
       })
       .join("");
-    const alts = (r.alternatives || [])
-      .map(function (a) {
+    const ranked = r.ranked || [fig].concat(r.alternatives || []);
+    const alts = ranked
+      .map(function (a, i) {
+        const badge = i === 0 ? '<span class="match-badge">最匹配</span>' : '<span class="match-rank">#' + (i + 1) + "</span>";
         return (
-          '<li class="alt-card" style="' +
+          '<li class="alt-card' +
+          (i === 0 ? " is-top" : "") +
+          '" style="' +
           posterStyle(a) +
           '"><div class="alt-poster">' +
           (a.image
-            ? '<img src="' + escapeHtml(a.image) + '" alt="' + escapeHtml(a.name) + '" loading="lazy" />'
+            ? '<img src="' +
+              escapeHtml(a.image) +
+              '" alt="' +
+              escapeHtml(a.name) +
+              '" loading="lazy" onerror="this.style.opacity=0.3" />'
             : "") +
-          '</div><div class="alt-meta"><strong>' +
+          "</div><div class=\"alt-meta\">" +
+          badge +
+          "<strong>" +
           escapeHtml(a.name) +
           "</strong><span>" +
           escapeHtml(a.dynasty) +
-          " · " +
+          " · 九型 " +
           escapeHtml(a.enneagram) +
           "</span><em>" +
           escapeHtml(a.title) +
@@ -225,10 +235,14 @@
       stack +
       "</ol></section>" +
 
-      '<section class="panel"><h2>同型其他人物</h2>' +
-      '<p class="panel-lede">同一 MBTI 可对应多种角色姿态；下列同属 ' +
+      '<section class="panel"><h2>同型匹配排行</h2>' +
+      '<p class="panel-lede">在 ' +
       escapeHtml(mbti.code) +
-      "，九型或功能侧重不同。</p>" +
+      " 人物池中，按八维权重与九型（主型 " +
+      escapeHtml(String(ennea.primary)) +
+      " / " +
+      escapeHtml(ennea.label) +
+      "）契合度排序；首位为本次最匹配结果，其余供对照。</p>" +
       '<ul class="alt-grid">' +
       alts +
       "</ul></section>" +
@@ -293,12 +307,14 @@
     state.answers = answers;
     state.result = D.computeResult(answers, state.order);
     if (D.FIGURES[code]) {
+      const pool = D.FIGURES[code];
       state.result.mbti.code = code;
       state.result.mbti.title = D.TYPE_TITLES[code];
       state.result.mbti.stack = D.TYPE_STACKS[code];
-      state.result.figure = D.FIGURES[code][0];
-      state.result.alternatives = D.FIGURES[code].slice(1);
-      state.result.pool = D.FIGURES[code];
+      state.result.figure = pool[0];
+      state.result.alternatives = pool.slice(1);
+      state.result.ranked = pool.slice();
+      state.result.pool = pool;
     }
     state.screen = "result";
   }

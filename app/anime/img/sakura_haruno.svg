@@ -1,19 +1,37 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1800" viewBox="0 0 1400 1800">
   <defs>
     <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#2a1c28"/>
-      <stop offset="100%" stop-color="#100c14"/>
+      <stop offset="0%" stop-color="#1c2830"/>
+      <stop offset="100%" stop-color="#0a1218"/>
     </linearGradient>
-    <radialGradient id="r" cx="70%" cy="20%" r="50%">
-      <stop offset="0%" stop-color="#e8a0b8" stop-opacity="0.4"/>
-      <stop offset="100%" stop-color="#e8a0b8" stop-opacity="0"/>
+    <radialGradient id="r" cx="50%" cy="32%" r="45%">
+      <stop offset="0%" stop-color="#7ec4d4" stop-opacity="0.45"/>
+      <stop offset="100%" stop-color="#7ec4d4" stop-opacity="0"/>
     </radialGradient>
+    <linearGradient id="sheen" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.08"/>
+      <stop offset="50%" stop-color="#ffffff" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0.25"/>
+    </linearGradient>
   </defs>
   <rect width="1400" height="1800" fill="url(#g)"/>
   <rect width="1400" height="1800" fill="url(#r)"/>
-  <rect x="80" y="120" width="8" height="220" fill="#e8a0b8"/>
-  <text x="110" y="200" fill="#e8a0b8" font-family="Noto Serif SC, Georgia, serif" font-size="42">漫鉴</text>
-  <text x="110" y="1260" fill="#f7f3f6" font-family="Noto Serif SC, Georgia, serif" font-size="72">春野樱</text>
-  <text x="110" y="1340" fill="#f7f3f6" fill-opacity="0.55" font-family="Georgia, serif" font-size="32">MBTI Lab · Anime Persona</text>
-  <text x="1050" y="1680" fill="#ffffff" fill-opacity="0.1" font-family="Noto Serif SC, Georgia, serif" font-size="320" text-anchor="middle">春</text>
+  <rect width="1400" height="1800" fill="url(#sheen)"/>
+
+  <!-- upper composition (visible above result caption) -->
+  <circle cx="700" cy="520" r="310" fill="none" stroke="#7ec4d4" stroke-width="2" opacity="0.35"/>
+  <circle cx="700" cy="520" r="230" fill="none" stroke="#7ec4d4" stroke-width="6" opacity="0.55"/>
+  <circle cx="700" cy="520" r="170" fill="#7ec4d4" fill-opacity="0.14"/>
+  <text x="700" y="590" text-anchor="middle" fill="#7ec4d4" fill-opacity="0.95"
+        font-family="Georgia, 'Times New Roman', serif" font-size="200">春</text>
+
+  <rect x="80" y="100" width="10" height="160" fill="#7ec4d4"/>
+  <text x="110" y="155" fill="#7ec4d4" font-family="Georgia, serif" font-size="36" letter-spacing="6">ANIME</text>
+  <text x="110" y="220" fill="#f7f3ec" fill-opacity="0.9"
+        font-family="'Microsoft YaHei', 'PingFang SC', 'Noto Sans SC', sans-serif" font-size="44">漫鉴</text>
+
+  <!-- name stays in HTML caption to avoid double-text overlap -->
+  <rect x="80" y="320" width="180" height="4" fill="#7ec4d4" opacity="0.55"/>
+  <text x="1100" y="1680" fill="#ffffff" fill-opacity="0.08"
+        font-family="Georgia, serif" font-size="280" text-anchor="middle">春</text>
 </svg>

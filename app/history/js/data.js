@@ -892,7 +892,7 @@ window.HISTORY_DATA = (function () {
 
   function resolveImage(id) {
     // runtime cannot stat files; default svg posters always exist
-    return "./img/" + id + ".svg";
+    return "./img/" + id + ".svg?v=3";
   }
   function ensureImages(figuresMap) {
     Object.keys(figuresMap).forEach(function (code) {
@@ -937,7 +937,7 @@ window.HISTORY_DATA = (function () {
   };
   Object.keys(FIGURES).forEach(function (code) {
     FIGURES[code].forEach(function (f) {
-      if (IMAGE_OVERRIDES[f.id]) f.image = IMAGE_OVERRIDES[f.id];
+      if (IMAGE_OVERRIDES[f.id]) f.image = IMAGE_OVERRIDES[f.id] + "?v=3";
     });
   });
 

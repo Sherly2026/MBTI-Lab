@@ -776,7 +776,7 @@ window.WORLD_DATA = (function () {
   }
 
   function resolveImage(id) {
-    return "./img/" + id + ".svg";
+    return "./img/" + id + ".svg?v=3";
   }
 
   function ensureImages(figuresMap) {
