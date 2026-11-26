@@ -44,7 +44,7 @@
       '<p class="lede">基于荣格八维与 MBTI 类型学的动物塑造型：同型可对应多种动物，结果含性格解说与视觉形象。</p>' +
       '<div class="cta-row">' +
       '<button type="button" class="btn primary" data-action="start">开始塑形</button>' +
-      '<a class="btn ghost" href="../history/">史鉴</a>' +
+      '<a class="btn ghost" href="../anime/">漫鉴</a>' +
       '<a class="btn ghost" href="../world/">寰鉴</a>' +
       "</div>" +
       '<ul class="meta-line"><li>' +

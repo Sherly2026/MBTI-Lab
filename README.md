@@ -10,6 +10,7 @@
 | 灵塑（动物塑） | https://sherly2026.github.io/MBTI-Lab/animal/ |
 | 史鉴（中国古代人物） | https://sherly2026.github.io/MBTI-Lab/history/ |
 | 寰鉴（外国历史人物） | https://sherly2026.github.io/MBTI-Lab/world/ |
+| 漫鉴（动漫人物） | https://sherly2026.github.io/MBTI-Lab/anime/ |
 
 仓库设置：Settings → Pages → Source 选 **GitHub Actions**。
 
@@ -49,6 +50,15 @@
 | 人物池 | 16 型 × 每型 3 人 = 48 位外国历史人物 |
 | 结果 | 详细性格对照、现代对应、功能栈、同型其他人选、视觉形象 |
 
+## 5. 漫鉴（动漫人物对照）
+
+| 项目 | 内容 |
+|------|------|
+| 题量 | 33 题（八维 24 + 九型 9） |
+| 逻辑 | 八维定 MBTI，九型分流角色 |
+| 角色池 | 16 型 × 每型 3 人 = 48 位动漫人物 |
+| 结果 | 详细性格对照、现代对应、功能栈、同型其他角色、视觉海报 |
+
 ## 本地运行
 
 ```bash
@@ -59,6 +69,7 @@ python -m http.server 5173
 - 灵塑：`http://localhost:5173/app/animal/`
 - 史鉴：`http://localhost:5173/app/history/`
 - 寰鉴：`http://localhost:5173/app/world/`
+- 漫鉴：`http://localhost:5173/app/anime/`
 
 ## 目录
 
@@ -68,6 +79,7 @@ app/
   animal/                 # 灵塑
   history/                # 史鉴（中国）
   world/                  # 寰鉴（外国）
+  anime/                  # 漫鉴（动漫）
 .github/workflows/deploy-pages.yml
 ```
 

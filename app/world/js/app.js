@@ -54,8 +54,8 @@
       '<p class="lede">以荣格八维与九型人格为轴，在外国历史人物中寻找相近的生命姿态：每型多位人选，解析尽量具体。</p>' +
       '<div class="cta-row">' +
       '<button type="button" class="btn primary" data-action="start">开始对照</button>' +
+      '<a class="btn ghost" href="../anime/">漫鉴</a>' +
       '<a class="btn ghost" href="../history/">史鉴</a>' +
-      '<a class="btn ghost" href="../index.html">八维测</a>' +
       "</div>" +
       '<ul class="meta-line"><li>' +
       TOTAL +
