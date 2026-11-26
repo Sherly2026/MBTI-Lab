@@ -134,11 +134,20 @@
       .join("");
     const altCards = alts
       .map(function (a) {
+        const thumb = a.image
+          ? '<img class="alt-photo" src="' +
+            escapeHtml(a.image) +
+            '" alt="' +
+            escapeHtml(a.name) +
+            '" loading="lazy" />'
+          : "";
         return (
           '<li class="alt-card" style="' +
           posterStyle(a) +
           '">' +
-          '<div class="alt-poster" aria-hidden="true"></div>' +
+          '<div class="alt-poster">' +
+          thumb +
+          '</div>' +
           '<div class="alt-meta"><strong>' +
           escapeHtml(a.name) +
           "</strong><span>" +
@@ -162,7 +171,7 @@
           escapeHtml(animal.image) +
           '" alt="' +
           escapeHtml(animal.name) +
-          '" loading="eager" onerror="this.remove()" />'
+          '" loading="eager" />'
         : "") +
       '<figcaption class="hero-caption">' +
       '<p class="eyebrow">' +
@@ -209,7 +218,7 @@
           "</ul></section>"
         : "") +
 
-      '<p class="disclaimer">动物塑是类型学的隐喻表达，用于自我探索与审美想象，不构成科学鉴定。图片来自 Unsplash 或本页视觉生成海报。</p>' +
+      '<p class="disclaimer">动物塑是类型学的隐喻表达，用于自我探索与审美想象，不构成科学鉴定。配图来自 Wikimedia Commons（本地缓存）及页面视觉海报。</p>' +
       '<div class="cta-row">' +
       '<button type="button" class="btn primary" data-action="restart">再测一次</button>' +
       '<a class="btn ghost" href="../index.html">八维测</a>' +
@@ -256,5 +265,31 @@
     render();
   }
 
+  /** 预览：#demo-ENTJ 可直接查看该型结果与配图 */
+  function maybeDemo() {
+    const hash = (location.hash || "").replace(/^#/, "");
+    if (hash.indexOf("demo") !== 0) return false;
+    const code = (hash.split("-")[1] || "").toUpperCase();
+    const answers = {};
+    D.QUESTIONS.forEach(function (q) {
+      answers[q.id] = 3;
+    });
+    state.order = D.QUESTIONS.slice();
+    state.answers = answers;
+    state.result = D.computeResult(answers, state.order);
+    if (code && D.ANIMALS[code]) {
+      const pick = D.ANIMALS[code];
+      state.result.type.code = code;
+      state.result.type.title = D.TYPE_TITLES[code] || code;
+      state.result.type.stack = D.TYPE_STACKS[code] || state.result.type.stack;
+      state.result.animal = pick[0];
+      state.result.alternatives = pick.slice(1);
+      state.result.pool = pick;
+    }
+    state.screen = "result";
+    return true;
+  }
+
+  maybeDemo();
   render();
 })();

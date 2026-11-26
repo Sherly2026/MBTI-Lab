@@ -61,7 +61,7 @@ window.ANIMAL_DATA = (function () {
         epithet: "静夜的战略家",
         weights: { Ni: 1.3, Te: 1.1, Fi: 0.9, Se: 0.5 },
         image:
-          "https://loremflickr.com/1400/1800/owl,bird?lock=101",
+          "./img/intj-owl.jpg",
         credit: "Unsplash",
         analysis:
           "夜鸮象征 INTJ 的 Ni 主导：在暗处先看见轮廓与轨迹，再以 Te 精准出击。你习惯拉开距离观察全局，不急于表态，却常在关键节点给出清晰方案。独处充电、标准偏高，是你保护洞察力的方式。",
@@ -73,7 +73,7 @@ window.ANIMAL_DATA = (function () {
         epithet: "暗线推进者",
         weights: { Ni: 1.1, Te: 1.2, Se: 0.9, Fi: 0.8 },
         image:
-          "https://loremflickr.com/1400/1800/black,panther?lock=102",
+          "./img/intj-panther.jpg",
         credit: "Unsplash",
         analysis:
           "黑豹塑更强调 Te 执行与身体感：一旦方向确定，你行动干净利落，很少内耗于多余解释。Ni 负责锁定猎物（目标），Se 辅助你捕捉时机。别人眼中的「难接近」，往往是你在节省沟通成本。",
@@ -85,7 +85,7 @@ window.ANIMAL_DATA = (function () {
         epithet: "象征解读者",
         weights: { Ni: 1.4, Fi: 1.1, Te: 0.9, Se: 0.4 },
         image:
-          "https://loremflickr.com/1400/1800/raven,crow?lock=103",
+          "./img/intj-raven.jpg",
         credit: "Unsplash",
         analysis:
           "渡鸦塑偏 Ni-Fi：你对意义、隐喻与「事情背后的故事」异常敏感，Te 仍在，但更像把洞见翻译成可执行原则。你可能比典型 INTJ 更内省、更在意价值一致性，也更需要审美与智识上的共鸣。",
@@ -99,7 +99,7 @@ window.ANIMAL_DATA = (function () {
         epithet: "多触手的概念匠",
         weights: { Ti: 1.4, Ne: 1.2, Si: 0.7, Fe: 0.4 },
         image:
-          "https://loremflickr.com/1400/1800/octopus?lock=104",
+          "./img/intp-octopus.jpg",
         credit: "Unsplash",
         analysis:
           "章鱼对应 INTP 的 Ti-Ne：一只触手抓住原理，其余触手同时试探可能性。你享受把系统拆开再重组，社交能耗高时会缩回「墨汁防御」。真正点燃你的，是一个值得深挖的谜题，而非热闹本身。",
@@ -111,7 +111,7 @@ window.ANIMAL_DATA = (function () {
         epithet: "随性的逻辑观察者",
         weights: { Ti: 1.2, Ne: 1.0, Si: 1.0, Fe: 0.6 },
         image:
-          "https://loremflickr.com/1400/1800/cat,tabby?lock=105",
+          "./img/intp-cat.jpg",
         credit: "Unsplash",
         analysis:
           "狸花猫塑更生活化：你有自己的活动节律，被打扰会不悦，但对感兴趣的对象会突然黏上来追问到底。Si 让你记得「上次这个 bug 怎么修的」，Ne 又让你半夜开新坑。自由与精确，缺一不可。",
@@ -125,7 +125,7 @@ window.ANIMAL_DATA = (function () {
         epithet: "领地指挥官",
         weights: { Te: 1.4, Ni: 1.1, Se: 0.9, Fi: 0.5 },
         image:
-          "https://loremflickr.com/1400/1800/lion?lock=106",
+          "./img/entj-lion.jpg",
         credit: "Unsplash",
         analysis:
           "雄狮塑突出 ENTJ 的 Te 主导：组织、授权、推进是你的本能。Ni 帮你看见中长期版图，Se 让你在压力下仍能当场拍板。你重视胜负与效率，对含糊与拖延几乎零容忍；学会照顾 Fi，能让领导力更长久。",
@@ -137,7 +137,7 @@ window.ANIMAL_DATA = (function () {
         epithet: "高空战略眼",
         weights: { Te: 1.2, Ni: 1.3, Se: 0.8, Fi: 0.6 },
         image:
-          "https://loremflickr.com/1400/1800/eagle,bird?lock=107",
+          "./img/entj-eagle.jpg",
         credit: "Unsplash",
         analysis:
           "金雕塑更偏 Ni 战略视野：你喜欢站在高处审视战场，再俯冲执行。比起「吼着带队」，你更用远见说服人。Te 仍是翅膀，但你的魅力来自「比别人早看见一步」——也因此对短视决策格外不耐烦。",
@@ -151,7 +151,7 @@ window.ANIMAL_DATA = (function () {
         epithet: "点子猎人",
         weights: { Ne: 1.4, Ti: 1.2, Fe: 0.8, Si: 0.4 },
         image:
-          "https://loremflickr.com/1400/1800/fox?lock=108",
+          "./img/entp-fox.jpg",
         credit: "Unsplash",
         analysis:
           "赤狐是经典 ENTP 塑：Ne 四处打洞找可能性，Ti 负责检验哪些洞真能通向宝藏。你机敏、善辩、讨厌死规矩，却常在玩梗中抛出真洞察。挑战在于把「好玩」收敛成「做成」——Si 是你最该练的肌肉。",
@@ -163,7 +163,7 @@ window.ANIMAL_DATA = (function () {
         epithet: "联结型捣蛋鬼",
         weights: { Ne: 1.3, Fe: 1.1, Ti: 1.0, Si: 0.5 },
         image:
-          "https://loremflickr.com/1400/1800/magpie,bird?lock=109",
+          "./img/entp-magpie.jpg",
         credit: "Unsplash",
         analysis:
           "喜鹊塑更亮 Fe：你不仅脑洞大，还爱把人串起来一起玩梗、一起吵真问题。你的辩论常带表演性，但底层仍是 Ti 在追逻辑一致性。热闹过后你也会空虚——需要一个真正值得长期投入的主题。",
@@ -177,7 +177,7 @@ window.ANIMAL_DATA = (function () {
         epithet: "林间洞察者",
         weights: { Ni: 1.4, Fe: 1.2, Ti: 0.8, Se: 0.4 },
         image:
-          "https://loremflickr.com/1400/1800/deer?lock=110",
+          "./img/infj-deer.jpg",
         credit: "Unsplash",
         analysis:
           "白鹿塑写 INFJ 的 Ni-Fe：你常在人群噪声里听见「没说出口的需要」，并被意义感牵引。外表柔和，内里有坚定方向。过度吸收他人情绪时会耗竭，需要定期隐入自己的密林恢复。",
@@ -189,7 +189,7 @@ window.ANIMAL_DATA = (function () {
         epithet: "高海拔守护者",
         weights: { Ni: 1.3, Fe: 1.0, Ti: 1.0, Se: 0.6 },
         image:
-          "https://loremflickr.com/1400/1800/snow,leopard?lock=111",
+          "./img/infj-snow-leopard.jpg",
         credit: "Unsplash",
         analysis:
           "雪豹塑更冷峻独立：你仍洞察人心，但不轻易交付全部自己。Ti 辅助你把直觉整理成清晰洞见。你保护边界，像守护稀薄空气里的领地——亲近的人很少，但一旦信任，会非常深。",
@@ -203,7 +203,7 @@ window.ANIMAL_DATA = (function () {
         epithet: "价值羽化者",
         weights: { Fi: 1.4, Ne: 1.3, Si: 0.7, Te: 0.4 },
         image:
-          "https://loremflickr.com/1400/1800/butterfly?lock=112",
+          "./img/infp-butterfly.jpg",
         credit: "Unsplash",
         analysis:
           "凤蝶对应 Fi-Ne：内在价值一次次蜕皮，外在想象不断换翅。你对美与真诚过敏般敏感，虚伪会让你立刻飞离。世界对你来说是象征与故事的田野；把灵感落成作品或关系，是你的终身课题。",
@@ -215,7 +215,7 @@ window.ANIMAL_DATA = (function () {
         epithet: "柔软的守望者",
         weights: { Fi: 1.3, Si: 1.1, Ne: 1.0, Te: 0.5 },
         image:
-          "https://loremflickr.com/1400/1800/rabbit?lock=113",
+          "./img/infp-bunny.jpg",
         credit: "Unsplash",
         analysis:
           "野兔塑更贴地、更 Si：你珍视小而确定的安全感与熟悉角落，同时内心仍有大片想象草原。警觉得高，不是胆小，而是对氛围与意图过度读取。温和不代表好拿捏——底线被踩时会突然爆发。",
@@ -229,7 +229,7 @@ window.ANIMAL_DATA = (function () {
         epithet: "群体引航员",
         weights: { Fe: 1.4, Ni: 1.2, Se: 0.8, Ti: 0.5 },
         image:
-          "https://loremflickr.com/1400/1800/dolphin?lock=114",
+          "./img/enfj-dolphin.jpg",
         credit: "Unsplash",
         analysis:
           "海豚塑写 ENFJ 的 Fe-Ni：你天然感知群体情绪流向，并想带大家游向更好的水域。你擅长鼓励与组织，也容易过度负责。记住：你不是整片海的氧气泵；留下 Ti 的冷静，能让关怀更可持续。",
@@ -241,7 +241,7 @@ window.ANIMAL_DATA = (function () {
         epithet: "记忆型大家长",
         weights: { Fe: 1.3, Ni: 1.0, Se: 0.7, Ti: 0.6 },
         image:
-          "https://loremflickr.com/1400/1800/elephant?lock=115",
+          "./img/enfj-elephant.jpg",
         credit: "Unsplash",
         analysis:
           "非洲象塑强调稳重与长程关怀：你记得谁受过伤、谁需要被看见，并用行动撑起共同体。气场大但不喧哗，权威来自可靠与温厚。你讨厌背弃与冷漠；自己也要学会被照顾。",
@@ -255,7 +255,7 @@ window.ANIMAL_DATA = (function () {
         epithet: "热情联结者",
         weights: { Ne: 1.4, Fi: 1.2, Te: 0.7, Si: 0.5 },
         image:
-          "https://loremflickr.com/1400/1800/otter?lock=116",
+          "./img/enfp-otter.jpg",
         credit: "Unsplash",
         analysis:
           "水獭是 ENFP 的明亮塑：Ne 让你对新鲜人与事上瘾，Fi 决定你跟谁玩得真心。你把生活过成一场又一场小冒险，也怕被困在重复里。学会一点点 Te 收束，能让热情变成可持续的创造。",
@@ -267,7 +267,7 @@ window.ANIMAL_DATA = (function () {
         epithet: "色彩演说家",
         weights: { Ne: 1.3, Fi: 1.1, Te: 0.9, Si: 0.4 },
         image:
-          "https://loremflickr.com/1400/1800/macaw,parrot?lock=117",
+          "./img/enfp-parrot.jpg",
         credit: "Unsplash",
         analysis:
           "金刚鹦鹉塑更外放表达：你用色彩与声音点燃场面，想法来得快、说得也快。Fi 保证你不是空心热闹——你在找能共鸣的人。注意力容易被新刺激带走；选一个「值得反复说」的主题，你会更有力量。",
@@ -281,7 +281,7 @@ window.ANIMAL_DATA = (function () {
         epithet: "稳健筑造者",
         weights: { Si: 1.4, Te: 1.3, Fi: 0.8, Ne: 0.4 },
         image:
-          "https://loremflickr.com/1400/1800/beaver?lock=118",
+          "./img/istj-beaver.jpg",
         credit: "Unsplash",
         analysis:
           "河狸塑写 ISTJ：用经验与流程一点点筑起可靠结构。Si 记得什么行得通，Te 把事情做成标准件。你不追求惊艳，追求「明年还能用」。改变可以接受，但请给理由、给步骤、给时间。",
@@ -293,7 +293,7 @@ window.ANIMAL_DATA = (function () {
         epithet: "长航守则者",
         weights: { Si: 1.3, Te: 1.2, Fi: 0.9, Ne: 0.5 },
         image:
-          "https://loremflickr.com/1400/1800/albatross,bird?lock=119",
+          "./img/istj-albatross.jpg",
         credit: "Unsplash",
         analysis:
           "信天翁塑强调耐力与航线：你一旦认定航道，就能长时间稳定前进。对细节与责任有近乎仪式感的尊重。风暴来时你靠预案，不靠即兴；别人眼中的固执，常是你对安全边际的坚持。",
@@ -307,7 +307,7 @@ window.ANIMAL_DATA = (function () {
         epithet: "温暖守群者",
         weights: { Si: 1.3, Fe: 1.4, Ti: 0.7, Ne: 0.5 },
         image:
-          "https://loremflickr.com/1400/1800/penguin?lock=120",
+          "./img/isfj-penguin.jpg",
         credit: "Unsplash",
         analysis:
           "企鹅塑贴合 ISFJ：在寒冷环境里仍维持群体温暖。你记得每个人的偏好与忌口，默默把细节补上。Fe 让你在意和谐，Si 让你成为「记得住」的那个人。请也把自己写进被照顾的名单里。",
@@ -319,7 +319,7 @@ window.ANIMAL_DATA = (function () {
         epithet: "安稳树栖者",
         weights: { Si: 1.4, Fe: 1.1, Ti: 0.8, Ne: 0.4 },
         image:
-          "https://loremflickr.com/1400/1800/koala?lock=121",
+          "./img/isfj-koala.jpg",
         credit: "Unsplash",
         analysis:
           "考拉塑更内收：你需要熟悉的树干（节奏、环境、关系）才能安心付出。不是懒，是节能策略——把能量留给真正重要的人。突然的变故会让你僵住；给过渡期，你会重新找到节奏并可靠如初。",
@@ -333,7 +333,7 @@ window.ANIMAL_DATA = (function () {
         epithet: "秩序执行官",
         weights: { Te: 1.4, Si: 1.3, Ne: 0.6, Fi: 0.5 },
         image:
-          "https://loremflickr.com/1400/1800/shepherd,dog?lock=122",
+          "./img/estj-shepherd.jpg",
         credit: "Unsplash",
         analysis:
           "牧羊犬塑写 ESTJ：盯着目标、维护秩序、把羊群带到该去的地方。Te-Si 让你擅长建立规则并监督执行。你直接、负责任，有时显得强硬——若补上对个别差异的耐心，团队会跟得更紧。",
@@ -345,7 +345,7 @@ window.ANIMAL_DATA = (function () {
         epithet: "高效蜂巢官",
         weights: { Te: 1.3, Si: 1.2, Ne: 0.7, Fi: 0.6 },
         image:
-          "https://loremflickr.com/1400/1800/bee?lock=123",
+          "./img/estj-bee.jpg",
         credit: "Unsplash",
         analysis:
           "蜜蜂塑强调分工与产出：你相信清晰角色能让整体甜蜜最大化。讨厌闲聊式空转，欣赏可量化的贡献。你自己也常超负荷工作；记住蜂巢需要休息日，否则连最勤劳的工蜂也会折翼。",
@@ -359,7 +359,7 @@ window.ANIMAL_DATA = (function () {
         epithet: "热情招待主",
         weights: { Fe: 1.4, Si: 1.2, Ne: 0.7, Ti: 0.5 },
         image:
-          "https://loremflickr.com/1400/1800/golden,retriever?lock=124",
+          "./img/esfj-retriever.jpg",
         credit: "Unsplash",
         analysis:
           "金毛塑是 ESFJ 的高光：你让人感到被欢迎、被记得、被照顾。Fe-Si 组合擅长维护传统与人情往来。你在意评价，有时会过度迎合；保留一点自己的喜好，热情会更真实、也更轻松。",
@@ -371,7 +371,7 @@ window.ANIMAL_DATA = (function () {
         epithet: "街坊联络员",
         weights: { Fe: 1.3, Si: 1.3, Ne: 0.8, Ti: 0.5 },
         image:
-          "https://loremflickr.com/1400/1800/sparrow,bird?lock=125",
+          "./img/esfj-sparrow.jpg",
         credit: "Unsplash",
         analysis:
           "麻雀塑更生活化、更接地气：你活跃在日常网络里，传递消息、组织小聚、留意谁最近不对劲。你不是舞台中央的孔雀，却是社区能运转的关键节点。琐碎里藏着你的价值感。",
@@ -385,7 +385,7 @@ window.ANIMAL_DATA = (function () {
         epithet: "冷静拆解者",
         weights: { Ti: 1.4, Se: 1.2, Ni: 0.8, Fe: 0.4 },
         image:
-          "https://loremflickr.com/1400/1800/lynx?lock=126",
+          "./img/istp-lynx.jpg",
         credit: "Unsplash",
         analysis:
           "猞猁塑写 ISTP：少言、敏锐、动手能力强。Ti 理解机制，Se 在现场即时校准。你讨厌被情绪绑架与无意义会议；给工具、给空间，你能把问题解决到漂亮。危机时反而最清醒。",
@@ -397,7 +397,7 @@ window.ANIMAL_DATA = (function () {
         epithet: "效率掠食者",
         weights: { Ti: 1.2, Se: 1.4, Ni: 0.7, Fe: 0.4 },
         image:
-          "https://loremflickr.com/1400/1800/shark?lock=127",
+          "./img/istp-shark.jpg",
         credit: "Unsplash",
         analysis:
           "礁鲨塑更 Se：你在动态环境中如鱼得水，判断快、动作干净。Ti 保证你不是莽撞，而是算过角度的一击。独处不是孤僻，是保持锋利的方式；勉强社交会让你钝掉。",
@@ -411,7 +411,7 @@ window.ANIMAL_DATA = (function () {
         epithet: "温柔审美者",
         weights: { Fi: 1.4, Se: 1.2, Ni: 0.8, Te: 0.4 },
         image:
-          "https://loremflickr.com/1400/1800/red,panda?lock=128",
+          "./img/isfp-redpanda.jpg",
         credit: "Unsplash",
         analysis:
           "小熊猫塑贴合 ISFP：外表可爱软萌，内在有清晰好恶。Fi 决定你靠近什么、离开什么；Se 让你沉浸在当下的味道、光线与触感里。你不爱冲突，但被逼违反本心时会坚决抽身。",
@@ -423,7 +423,7 @@ window.ANIMAL_DATA = (function () {
         epithet: "静美的界限者",
         weights: { Fi: 1.3, Se: 1.0, Ni: 1.0, Te: 0.5 },
         image:
-          "https://loremflickr.com/1400/1800/swan?lock=129",
+          "./img/isfp-swan.jpg",
         credit: "Unsplash",
         analysis:
           "天鹅塑更强调气质与界限：你用美感与距离保护内心。表面平静，情绪与价值在水下划动。Ni 让你偶尔看见关系的远期形状。你需要美的环境才能好好呼吸——这不是矫情，是功能需求。",
@@ -437,7 +437,7 @@ window.ANIMAL_DATA = (function () {
         epithet: "瞬时行动派",
         weights: { Se: 1.5, Ti: 1.2, Fe: 0.7, Ni: 0.4 },
         image:
-          "https://loremflickr.com/1400/1800/cheetah?lock=130",
+          "./img/estp-cheetah.jpg",
         credit: "Unsplash",
         analysis:
           "猎豹是 ESTP 的速度塑：Se 捕捉机会，Ti 快速算路，然后全力加速。你擅长临场、谈判、试错，厌烦长篇理论。爆发力强，也要注意「加速—恢复」循环，避免把人生开成只有短跑。",
@@ -449,7 +449,7 @@ window.ANIMAL_DATA = (function () {
         epithet: "小队战术手",
         weights: { Se: 1.3, Ti: 1.1, Fe: 1.0, Ni: 0.5 },
         image:
-          "https://loremflickr.com/1400/1800/wolf?lock=131",
+          "./img/estp-wolf.jpg",
         credit: "Unsplash",
         analysis:
           "灰狼塑带一点 Fe：你行动派，但也懂小队协作与江湖义气。现场带动气氛、临场调配资源是你的强项。你要自由，也要可信的同伴；空洞的管束会让你叛逆，清晰的目标会让你卖力。",
@@ -463,7 +463,7 @@ window.ANIMAL_DATA = (function () {
         epithet: "现场焦点",
         weights: { Se: 1.4, Fi: 1.2, Te: 0.7, Ni: 0.4 },
         image:
-          "https://loremflickr.com/1400/1800/peacock?lock=132",
+          "./img/esfp-peacock.jpg",
         credit: "Unsplash",
         analysis:
           "孔雀塑写 ESFP：你把当下过成可见的美与热度。Se-Fi 让表演不只是吵闹，而是带个人温度的表达。你怕被忽视，更怕被误解为肤浅——其实你很清楚什么体验值得、什么人假。",
@@ -475,7 +475,7 @@ window.ANIMAL_DATA = (function () {
         epithet: "机灵社交侦察兵",
         weights: { Se: 1.3, Fi: 1.1, Te: 0.8, Ni: 0.5 },
         image:
-          "https://loremflickr.com/1400/1800/meerkat?lock=133",
+          "./img/esfp-meerkat.jpg",
         credit: "Unsplash",
         analysis:
           "狐獴塑更轻巧、更群体：你留意周围动态，随时能切换话题与玩法，让小队不冷场。你活得具体而热闹，对沉闷理论没耐心。深度可以有，但请用故事与体验包装，别用说教。",
@@ -696,6 +696,8 @@ window.ANIMAL_DATA = (function () {
     QUESTIONS: QUESTIONS,
     SCALE_LABELS: SCALE_LABELS,
     ANIMALS: ANIMALS,
+    TYPE_TITLES: TYPE_TITLES,
+    TYPE_STACKS: TYPE_STACKS,
     shuffle: shuffle,
     computeResult: computeResult,
   };
