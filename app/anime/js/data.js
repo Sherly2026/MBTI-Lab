@@ -1302,7 +1302,7 @@ window.ANIME_DATA = (function () {
   }
 
   function resolveImage(id) {
-    return "./img/" + id + ".svg?v=3";
+    return "./img/" + id + ".jpg?v=6";
   }
 
   function ensureImages(figuresMap) {

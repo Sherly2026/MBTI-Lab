@@ -891,8 +891,7 @@ window.HISTORY_DATA = (function () {
 
 
   function resolveImage(id) {
-    // runtime cannot stat files; default svg posters always exist
-    return "./img/" + id + ".svg?v=3";
+    return "./img/" + id + ".jpg?v=6";
   }
   function ensureImages(figuresMap) {
     Object.keys(figuresMap).forEach(function (code) {
@@ -904,43 +903,6 @@ window.HISTORY_DATA = (function () {
   }
 
   ensureImages(FIGURES);
-  const IMAGE_OVERRIDES = {
-    "zhugeliang": "./img/zhugeliang.svg",
-    "zhangliang": "./img/zhangliang.svg",
-    "wanganshi": "./img/wanganshi.svg",
-    "zhuangzi": "./img/zhuangzi.svg",
-    "caocao": "./img/caocao.svg",
-    "kangxi": "./img/kangxi.svg",
-    "sudongpo": "./img/sudongpo.svg",
-    "dongfangshuo": "./img/dongfangshuo.svg",
-    "jianzhen": "./img/jianzhen.svg",
-    "libai": "./img/libai.svg",
-    "zengguofan": "./img/zengguofan.svg",
-    "simaqian": "./img/simaqian.svg",
-    "baijuyi": "./img/baijuyi.svg",
-    "baozheng": "./img/baozheng.svg",
-    "hairui": "./img/hairui.svg",
-    "simaguang": "./img/simaguang.svg",
-    "dufu": "./img/dufu.svg",
-    "huangdaopo": "./img/huangdaopo.svg",
-    "yongzheng": "./img/yongzheng.svg",
-    "zhuyuanzhang": "./img/zhuyuanzhang.svg",
-    "fangxuanling": "./img/fangxuanling.svg",
-    "di_renjie": "./img/di_renjie.svg",
-    "hanxin": "./img/hanxin.svg",
-    "huatuo": "./img/huatuo.svg",
-    "bada": "./img/bada.svg",
-    "zhengbanqiao": "./img/zhengbanqiao.svg",
-    "zhaoyun": "./img/zhaoyun.svg",
-    "tangxuanzong": "./img/tangxuanzong.svg",
-    "yangyuhuan": "./img/yangyuhuan.svg",
-  };
-  Object.keys(FIGURES).forEach(function (code) {
-    FIGURES[code].forEach(function (f) {
-      if (IMAGE_OVERRIDES[f.id]) f.image = IMAGE_OVERRIDES[f.id] + "?v=3";
-    });
-  });
-
 
   const TYPE_TONES = {
     INTJ: ["#1c2a33", "#0a1218", "#c9b28a"],
